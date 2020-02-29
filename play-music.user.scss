@@ -6,9 +6,9 @@
 
 /* ==UserStyle==
 @name Google Play Music - Dark
-@version 2020.1.5-3
-@description This style is not meant to mod the interface in any way, just make it black. 
-@author macfeaster
+@version 2020.1.5-4
+@description This style is not meant to mod the interface in any way, just make it black. Forked from https://github.com/macfeaster/play-music-black
+@author sidelong44
 @namespace sektor.io
 @homepageURL https://github.com/sidelong44/play-music-black
 @supportURL https://github.com/sidelong44/play-music-black/issues/
@@ -153,7 +153,8 @@
 	}
 	/* Search Box - Song/Artist Suggestions */
 	sj-entity-suggestion {
-		&:hover {
+		&:hover,
+		&.query-selected {
 			background: #424242;
 		}
 		#title.sj-entity-suggestion {
@@ -164,9 +165,6 @@
 			border-bottom: 7px solid #282828;
 			box-shadow: none;
 		}
-	}
-	.sj-entity-suggestion.query-selected {
-		background: #424242;
 	}
 	/* Search Box - Text Suggestions */
 	sj-search-suggestion {
