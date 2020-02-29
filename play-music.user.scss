@@ -320,6 +320,10 @@
 			&,
 			&::before {
 				background: #111;
+				
+				@include body-qp {
+					background: #111;
+				}
 			}
 		}
 		&#music-content {
@@ -344,15 +348,6 @@
 			[data-col="title"],
 			&.mini [data-col="song-details"] .song-title {
 				color: rgba(255, 255, 255, 0.7);
-			}
-		}
-		
-		@include body-qp {
-			.cluster-text-protection {
-				&,
-				&::before {
-					background: #111;
-				}
 			}
 		}
 	}
