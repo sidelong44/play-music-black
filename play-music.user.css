@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Google Play Music - Dark
-@version 2020.1.5-2
+@version 2020.1.5-3
 @description This style is not meant to mod the interface in any way, just make it black. 
 @author macfeaster
 @namespace sektor.io
@@ -79,6 +79,7 @@
   sj-home h2 span.home-palette-id-1.tooltip { color: white !important; }
   gpm-headline-header h2.gpm-headline-header { color: white !important; }
   /* Recent Activity, Top Songs */
+  #breadcrumbs-dropdown-button[disabled] { color: white; }
   .recent-view #gridTitle { color: white !important; }
   .recent-view .details .card-title { color: white !important; }
   .recent-view .details .card-subtitle { color: rgba(255, 255, 255, 0.7) !important; }
@@ -89,11 +90,11 @@
   .material-playlist-container, .material-album-container { background: #212121 !important; }
   .material { background: #111; }
   .material .cluster-text-protection, .material .cluster-text-protection::before { background: #111; }
+  body.qp .material .cluster-text-protection, body.qp .material .cluster-text-protection::before { background: #111; }
   .material#music-content { background: transparent; }
   .material .song-row td, .material .upload-progress-row td { background: #212121; color: rgba(255, 255, 255, 0.7); }
   .material .song-row.selected-song-row td, .material .song-row.currently-playing td { background-color: #272727 !important; }
   .material .song-table [data-col="title"], .material .song-table.mini [data-col="song-details"] .song-title { color: rgba(255, 255, 255, 0.7); }
-  body.qp .material .cluster-text-protection, body.qp .material .cluster-text-protection::before { background: #111; }
   .song-row .title-right-items { color: rgba(255, 255, 255, 0.7); }
   .song-row tr.song-row a { color: rgba(255, 255, 255, 0.7); }
   .song-row:hover > td { background-color: #282828 !important; }

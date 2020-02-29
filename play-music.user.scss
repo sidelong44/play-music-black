@@ -6,7 +6,7 @@
 
 /* ==UserStyle==
 @name Google Play Music - Dark
-@version 2020.1.5-2
+@version 2020.1.5-3
 @description This style is not meant to mod the interface in any way, just make it black. 
 @author macfeaster
 @namespace sektor.io
@@ -285,6 +285,9 @@
 		color: white !important;
 	}
 	/* Recent Activity, Top Songs */
+	#breadcrumbs-dropdown-button[disabled] {
+		color: white;
+	}
 	.recent-view {
 		#gridTitle {
 			color: white !important;
@@ -320,6 +323,10 @@
 			&,
 			&::before {
 				background: #111;
+				
+				@include body-qp {
+					background: #111;
+				}
 			}
 		}
 		&#music-content {
@@ -344,15 +351,6 @@
 			[data-col="title"],
 			&.mini [data-col="song-details"] .song-title {
 				color: rgba(255, 255, 255, 0.7);
-			}
-		}
-		
-		@include body-qp {
-			.cluster-text-protection {
-				&,
-				&::before {
-					background: #111;
-				}
 			}
 		}
 	}
