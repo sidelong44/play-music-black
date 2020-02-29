@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Google Play Music - Dark
-@version 2020.1.5-2
+@version 2020.1.5-3
 @description This style is not meant to mod the interface in any way, just make it black. 
 @author macfeaster
 @namespace sektor.io
@@ -79,6 +79,7 @@
   sj-home h2 span.home-palette-id-1.tooltip { color: white !important; }
   gpm-headline-header h2.gpm-headline-header { color: white !important; }
   /* Recent Activity, Top Songs */
+  #breadcrumbs-dropdown-button[disabled] { color: white; }
   .recent-view #gridTitle { color: white !important; }
   .recent-view .details .card-title { color: white !important; }
   .recent-view .details .card-subtitle { color: rgba(255, 255, 255, 0.7) !important; }
